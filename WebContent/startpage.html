@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Start</title>
+</head>
+<body>
+<p style="font-family:arial;font-size:180%;color:darkgrey">
+<center>
+<h1>
+WELCOME TO THE STREET DAMAGE DETECTOR<br>
+</h1>
+Thank you for choosing the Street Damage Detector<br>
+With that detector you can help to improve the street condition for everyone!<br>
+You can <a href="upload.jsp">upload</a> images of damage you detected or you can <a href="download.jsp">download</a> damage data for your navigation system.
+<br><a href="info.jsp">Here</a> you can get more information about the damage detector.
+<br><br>
+What do you want to do?<br><br>
+<input type="button" onclick="window.location.href = 'upload.jsp';"
+value="Report damage!">
+<br><br>
+<input type="button" onclick="window.location.href = 'download.jsp';"
+value="Download damage data!">
+<br><br>
+<form action="/DamageFinal/show" method="post">
+<input type="submit" value="Show already downloaded damage data on the map!" /><br><br>
+<input type="button" onclick="window.location.href = 'info.jsp';"
+value="Get more infos!">
+<br><br>
+</form>
+</center>
+</body>
+</html>
